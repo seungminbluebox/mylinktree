@@ -22,3 +22,4 @@ function brightdown(self){
 function brightup(self){
     self.style.filter="brightness(1.25)"
 }
+// <!-- dd -->
