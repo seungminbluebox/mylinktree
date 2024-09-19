@@ -1,0 +1,142 @@
+body{
+    background-color: aqua;
+    margin: 0;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h4{
+    text-align: center;
+}
+
+/* -------------------info 버튼에 대한 css--------- */
+
+#faviconinfo{                       /*info 버튼에 대한 부모노드*/
+    position: absolute;             /*인포 버튼이 들어갈 위치*/
+    top: 10px;                      /*조정*/
+    right: 10px;                    /*작업*/
+    cursor: pointer;
+}
+
+#faviconinfo:hover #tooltip{        /*faviconinfo위에 커서를 올리면 tooltip이 보임*/
+    display: block;                 /*block형식으로*/
+}
+
+#infoimg{                           /*인포메이션 이미지*/
+    width: 40px;                    
+    height: 40px;                   /*크기조정*/
+    padding: 10px;                  /*패딩조정*/
+}
+
+#tooltip{                           /*툴팁 창을 구성하는 div*/
+    display: none;                  /*아무것도 안뜨게 함 hover작동시 뜨게 해야함*/
+    position: absolute;             /*지정한 위치에 무슨일이 있어도*/
+    top: 80%;                       /*툴팁 위치*/
+    right: 40px;                    /*조정*/
+    background-color: rgba(255, 255, 255, 0.473);
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 10px black;         
+    z-index: 1;                     /*창의 높이설정*/
+}
+
+#faviconimg{                        /*써니사진*/
+    width: 400px;                   /*크기*/
+    height: 400px;                  /*설정*/
+}
+/* --------------------------------------------------- */
+
+/*프로필 사진에 대한 style---------------- */
+
+#profilelink{                       /*부모 요소에 text-align: center;를 적용하면,*/
+    text-align: center;             /*그 안에 있는 모든 인라인(inline) 또는 인라인 블록(inline-block) */
+}                                   /*자식 요소들이 가운데 정렬됨*/
+
+#profile{                           /*프로필 이미지*/
+    margin-top: 50px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;             /*사진을 둥글게*/
+    margin-top: 30px;
+    cursor: pointer;        
+}
+
+/* ------------------------------------------ */
+
+
+/* ------프로필 SNS에 대한 상자--------------- */
+
+.button{                            /* a태그 */
+    display: block;                 
+    height: 50px;                   /*크기 조정해서*/
+    width: 500px;                   /*링크 클릭 할수있는 구역 정하기*/
+    margin: auto;                   /*가운데 정렬*/
+    text-align: center;             /*a태그 안에 있는 글자들도 가운데정렬*/
+    background-color: skyblue;
+    line-height: 50px;              /*글자 높이도 가운데 정렬*/
+    border-radius: 25px;            
+    margin-bottom: 30px;            /*버튼 간 간격두기*/
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+.img{                               /*버튼 안에 들어갈각 플랫폼 이미지 설정*/
+    height: 25px;
+    width: 25px;
+    vertical-align: -5px;           /*플랫폼 이미지가 글자와 자연스럽게 있을 수 있게 높이조정*/
+}
+#bluebox{
+    border-radius: 50px;            /*bluebox이미지는 둥그래야하니 'img'class안에 id따로 설정해서 조정*/
+}
+/* ------------------------------------------ */
+
+
+/*-------project버튼에 관한 style----------- */
+
+
+#projectgrid{                           /*자식 div를 3개 가지고있는 부모div*/
+    display: grid;                      /*분할로 나누기위해 선입력 필요한 코드*/
+    width: 600px;                       /*SNS버튼과 같은 폭 안에서 삼분할로 버튼이 구성되어야하니 너비를 미리 지정*/
+    grid-template-columns: 1fr 1fr 1fr; /*projectgrid라는 div부모요소안에 삼열로 만들거니 세개 각각의 div를 만들어 3분할*/
+    text-align: center;                 /*부모 요소에 text-align: center;를 적용하면,*/
+                                        /*그 안에 있는 모든 인라인(inline) 또는 인라인 블록(inline-block) */
+                                        /*자식 요소들이 가운데 정렬됨*/
+
+    margin: auto;                       /*가운데 정렬*/
+}
+
+.projectbutton{                         /*프로젝트에 대한 a태그*/
+    display: inline;                    /*프로젝트 버튼이 여러개 있어야하니 block이 아닌inline*/
+    width: 75px;                        
+    height: 75px;
+    border-radius: 50px;                /*둥글게*/
+}
+.projectimg{                             /*프로젝트 파비콘 이미지*/
+    display: inline;
+    width: 75px;
+    height: 75px;
+    
+}
+
+
+
+/* ------------------------------------------ */
+
+
+
+
+
