@@ -1,0 +1,83 @@
+[
+  {
+    "year": "2026",
+    "projects": [
+      {
+        "title": "Hang On!",
+        "url": "https://www.hangon.co.kr/",
+        "img": "img/hangon.png",
+        "desc": "거시경제, 주식 정보 제공 서비스"
+      },
+      {
+        "title": "What to do",
+        "url": "https://seungminbluebox.github.io/whattodo/",
+        "img": "img/whatTodo.png",
+        "desc": "직관적인, 할일 자동알림 웹앱"
+      },
+      {
+        "title": "내돈지도",
+        "url": "https://github.com/seungminbluebox/naedonjidoV2",
+        "img": "img/naedonjido.png",
+        "desc": "자산 흐름, 주식투자 현황 중계 서비스"
+      }
+    ]
+  },
+  {
+    "year": "2025",
+    "projects": [
+      {
+        "title": "노트패드",
+        "url": "https://github.com/seungminbluebox/notepad-electron",
+        "img": "img/notePad.jpg",
+        "desc": "감성 고급 Electron 메모장"
+      },
+      {
+        "title": "gpt clip",
+        "url": "https://gpt-clip.vercel.app/",
+        "img": "img/gptClipIcon.png",
+        "desc": "AI 답변 저장관리 시스템"
+      },
+      {
+        "title": "Weather Here",
+        "url": "https://d34ndhnazdekp6.cloudfront.net/",
+        "img": "img/weatherHereIcon.png",
+        "desc": "현재위치의 대기,습도,불쾌지수 알림"
+      },
+      {
+        "title": "Auto Bit",
+        "url": "https://github.com/seungminbluebox/autoBit",
+        "img": "img/Bitcoin.png",
+        "desc": "코인 api, 클라우드로 24시간 자동매매"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "projects": [
+      {
+        "title": "Smart+노트📝",
+        "url": "https://seungminbluebox.github.io/smart-note/",
+        "img": "img/smartnote.png",
+        "desc": "효율적인 메모 관리"
+      },
+      {
+        "title": "배경색 변환🌈",
+        "url": "https://seungminbluebox.github.io/backgroundcolorchanger/",
+        "img": "img/backgroundccolorchaner.png",
+        "desc": "간단한 색상 변경"
+      },
+      {
+        "title": "숫자 카운터🧮",
+        "url": "https://seungminbluebox.github.io/counter/",
+        "img": "img/counter.png",
+        "desc": "숫자 세기 보조"
+      },
+      {
+        "title": "가위바위보✊✌️✋",
+        "url": "https://seungminbluebox.github.io/rock_scissors_paper/",
+        "img": "img/rock scissors paper.png",
+        "desc": "미니 게임"
+      }
+    ]
+  }
+]

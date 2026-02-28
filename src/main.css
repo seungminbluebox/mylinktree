@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+.glass-morphism {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.glass-morphism-dark {
+  @apply bg-slate-900/10 backdrop-blur-md border border-white/10 shadow-lg;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-blue-200 rounded-full hover:bg-blue-300 transition-colors;
+}
