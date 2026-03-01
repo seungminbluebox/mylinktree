@@ -16,6 +16,26 @@
   @apply bg-slate-900/10 backdrop-blur-md border border-white/10 shadow-lg;
 }
 
+/* Infinity Scroll Animation */
+@keyframes scrollGallery {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-gallery {
+  display: flex;
+  width: max-content;
+  animation: scrollGallery 60s linear infinite;
+}
+
+.animate-gallery:hover {
+  animation-play-state: paused;
+}
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }

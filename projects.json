@@ -4,21 +4,147 @@
     "projects": [
       {
         "title": "Hang On!",
-        "url": "https://www.hangon.co.kr/",
+        "repo": "https://github.com/seungminbluebox/hangonfrontend",
+        "demo": "https://www.hangon.co.kr/",
         "img": "img/hangon.png",
-        "desc": "거시경제, 주식 정보 제공 서비스"
+        "desc": "거시경제, 주식 정보 제공 서비스",
+        "details": {
+          "overview": "Next.js 기반의 프론트엔드, GitHub Actions를 활용한 서버리스 백엔드, 그리고 Google Cloud VM 기반의 24시간 실시간 모듈을 결합하여 글로벌 거시경제 지표와 시장 심리를 통합 모니터링하는 분산 아키텍처 기반 종합 금융 대시보드 플랫폼.",
+          "stack": [
+            "Next.js",
+            "TypeScript",
+            "Python",
+            "Supabase",
+            "GitHub Actions",
+            "Google Cloud Platform (VM)"
+          ],
+          "features": [
+            "Next.js App Router와 TypeScript를 기반으로 프론트엔드를 구축하고, PWA(Progressive Web App) 기술 및 Service Worker를 도입하여 모바일 환경에서 네이티브 앱 수준의 최적화된 UX 및 푸시 알림 수신 환경 제공",
+            "Python 스크립트와 GitHub Actions의 CRON 스케줄러를 결합하여 서버리스 백엔드 파이프라인을 설계하고, 매일 정해진 시간에 자금 흐름, 공포/탐욕 지수, 풋/콜 비율 등 핵심 거시경제 데이터를 자동 크롤링하여 Supabase DB에 동기화하는 자동화 로직 구현",
+            "Google Cloud Platform(GCP)의 가상 머신(VM) 환경에 Python 기반의 KOSPI 야간 선물 데이터 수집 모듈을 배포하여 24시간 무중단 백그라운드 스크래핑을 수행하고, 변동 사항 발생 시 Next.js 프론트엔드의 캐시를 능동적으로 재검증(On-Demand Revalidation)하는 실시간 데이터 파이프라인 구축",
+            "Supabase(PostgreSQL)를 활용해 사용자 인증 및 데이터 영속성을 관리하고, 수집된 주요 경제 일정, 환율, 일일 시황 브리핑 등의 데이터를 분석하여 사용자에게 선제적으로 푸시 알림을 발송하는 능동형 알림 시스템 설계"
+          ],
+          "gallery": [
+            {
+              "src": "hangonImg/1.png",
+              "caption": "메인 대시보드 인터페이스 디자인"
+            },
+            {
+              "src": "hangonImg/2.png"
+            },
+            {
+              "src": "hangonImg/3.png"
+            },
+            {
+              "src": "hangonImg/4.png"
+            },
+            {
+              "src": "hangonImg/5.png"
+            },
+            {
+              "src": "hangonImg/6.png"
+            },
+            {
+              "src": "hangonImg/7.png"
+            },
+            {
+              "src": "hangonImg/8.png"
+            },
+            {
+              "src": "hangonImg/9.png"
+            },
+            {
+              "src": "hangonImg/10.png"
+            },
+            {
+              "src": "hangonImg/11.png"
+            },
+            {
+              "src": "hangonImg/12.png"
+            }
+          ]
+        }
       },
       {
         "title": "What to do",
-        "url": "https://seungminbluebox.github.io/whattodo/",
+        "repo": "https://github.com/seungminbluebox/whattodo",
+        "demo": "https://seungminbluebox.github.io/whattodo/",
         "img": "img/whatTodo.png",
-        "desc": "직관적인, 할일 자동알림 웹앱"
+        "desc": "직관적인, 할일 자동알림 웹앱",
+        "details": {
+          "overview": "Next.js와 Supabase를 기반으로 구현된 할 일 관리(To-Do) 웹 애플리케이션으로, Zustand를 통한 전역 상태 관리와 PWA(Progressive Web App) 도입, 그리고 GitHub Actions 기반의 푸시 알림 자동화 파이프라인을 갖춘 프로덕션 수준의 서비스.",
+          "stack": [
+            "Next.js",
+            "TypeScript",
+            "Zustand",
+            "Supabase",
+            "PWA (Service Worker)"
+          ],
+          "features": [
+            "상태 관리 라이브러리 Zustand를 활용하여 캘린더 뷰, 오늘 할 일, 휴지통, 카테고리 등 복잡한 투두 리스트의 상태를 클라이언트에서 효율적으로 제어하고, Supabase 데이터베이스와 연동하여 실시간 데이터 동기화 및 사용자 인증(Auth) 파이프라인 구축",
+            "Service Worker(sw.js)와 Web App Manifest를 직접 구성하여 애플리케이션을 PWA로 패키징함으로써, 모바일 환경에서 홈 화면 추가 및 네이티브 앱 수준의 UX를 제공하고 푸시 알림 수신을 위한 백그라운드 환경 마련",
+            "Python 스크립트(send_reminders.py)로 작성된 푸시 알림 발송 모듈을 GitHub Actions의 CRON 스케줄러(daily-reminders.yml)와 결합하여, 상시 가동되는 별도의 백엔드 서버 없이도 매일 정해진 시간에 사용자에게 리마인더를 발송하는 서버리스(Serverless) 자동화 시스템 설계"
+          ],
+          "gallery": [
+            {
+              "src": "whattodo/1.png"
+            },
+            {
+              "src": "whattodo/2.png"
+            },
+            {
+              "src": "whattodo/3.png"
+            },
+            {
+              "src": "whattodo/4.png"
+            },
+            {
+              "src": "whattodo/5.png"
+            },
+            {
+              "src": "whattodo/6.png"
+            },
+            {
+              "src": "whattodo/7.png"
+            },
+            {
+              "src": "whattodo/8.png"
+            },
+            {
+              "src": "whattodo/9.png"
+            },
+            {
+              "src": "whattodo/10.png"
+            },
+            {
+              "src": "whattodo/11.png"
+            },
+            {
+              "src": "whattodo/12.png"
+            }
+          ]
+        }
       },
       {
         "title": "내돈지도",
-        "url": "https://github.com/seungminbluebox/naedonjidoV2",
+        "repo": "https://github.com/seungminbluebox/naedonjidoV2",
         "img": "img/naedonjido.png",
-        "desc": "자산 흐름, 주식투자 현황 중계 서비스"
+        "desc": "자산 흐름, 주식투자 현황 중계 서비스",
+        "details": {
+          "overview": "Next.js 풀스택 프레임워크와 Firebase를 활용해 개인의 금융 자산을 통합하고, 실시간 주식 및 환율 데이터를 연동하여 체계적인 포트폴리오 관리를 지원하는 클라우드 기반 종합 자산 관리 대시보드.",
+          "stack": [
+            "Next.js",
+            "TypeScript",
+            "Firebase (Auth/Firestore)",
+            "Tailwind CSS (Shadcn UI)",
+            "yahoo-finance2"
+          ],
+          "features": [
+            "Next.js의 Route Handler와 yahoo-finance2 라이브러리를 활용해 실시간 주가 및 환율 데이터를 파싱하는 자체 백엔드 API를 구축하고, 한국 주식 티커 자동 정규화(.KS) 및 오류 발생 시 병렬 개별 호출로 전환되는 폴백(Fallback) 알고리즘을 설계하여 통신 안정성 극대화",
+            "Firebase Authentication의 인증 시스템과 Cloud Firestore를 연동하여, 로그인된 사용자의 고유 식별자(UID)를 기준으로 주식 보유 내역, 배당금, 입출금 기록 등의 데이터를 안전하게 격리 및 동기화하는 서버리스(Serverless) 데이터베이스 파이프라인 구현",
+            "TypeScript의 정적 타입 시스템을 도입해 복잡한 금융 데이터 객체의 무결성과 유지보수성을 확보하고, Tailwind CSS 기반의 Shadcn UI를 적용하여 모던한 반응형 컴포넌트를 설계한 후 Vercel 인프라를 통해 프로덕션 환경에 배포 및 운영"
+          ]
+        }
       }
     ]
   },
@@ -27,27 +153,92 @@
     "projects": [
       {
         "title": "노트패드",
-        "url": "https://github.com/seungminbluebox/notepad-electron",
+        "repo": "https://github.com/seungminbluebox/notepad-electron",
         "img": "img/notePad.jpg",
-        "desc": "감성 고급 Electron 메모장"
+        "desc": "감성 고급 Electron 메모장",
+        "details": {
+          "overview": "순수 웹 기술(HTML/CSS/JS)을 Electron 프레임워크를 통해 독립적인 Windows 데스크톱 소프트웨어(.exe)로 패키징하고 배포하여, OS 수준의 로컬 파일 시스템 제어와 자동 업데이트까지 지원하는 완성형 커스텀 메모장 애플리케이션.",
+          "stack": [
+            "Electron",
+            "Node.js",
+            "Vanilla JavaScript",
+            "electron-builder",
+            "electron-updater"
+          ],
+          "features": [
+            "메인 프로세스(Node.js)와 렌더러 프로세스(웹 UI) 간의 안전한 데이터 통신을 위해 preload.js의 contextBridge를 활용한 IPC(Inter-Process Communication) 아키텍처를 설계하여, 사용자의 로컬 파일 시스템에 접근해 .txt 파일을 읽고 쓰는 CRUD 로직을 네이티브 앱 수준으로 구현",
+            "electron-builder를 사용하여 프로젝트를 독립 실행형 Windows 인스톨러(NSIS)로 패키징하고, OS의 파일 연결(File Associations) 설정을 통해 시스템에서 .txt 파일 더블 클릭 시 앱이 자동으로 연결되어 실행되도록 통합 환경 구축",
+            "electron-updater와 GitHub Releases를 연동하여 새로운 버전 배포 시 사용자에게 백그라운드로 알림을 보내고 즉각적으로 소프트웨어를 갱신하는 OTA(Over-The-Air) 자동 업데이트 파이프라인 구현",
+            "OS 기본 타이틀바를 제거한 프레임리스(Frameless) 디자인과 커스텀 창 제어 로직을 적용하고, Drag & Drop API 기반의 파일 로드 기능 및 앱 강제 종료 전 미저장 변경사항을 감지하여 경고 모달을 띄우는 방어적 예외 처리 로직(try-app-close)을 통해 데스크톱 UX 최적화"
+          ]
+        }
       },
       {
         "title": "gpt clip",
-        "url": "https://gpt-clip.vercel.app/",
+        "demo": "https://gpt-clip.vercel.app/",
+        "repo": "https://github.com/seungminbluebox/gptClip",
         "img": "img/gptClipIcon.png",
-        "desc": "AI 답변 저장관리 시스템"
+        "desc": "AI 답변 저장관리 시스템",
+        "details": {
+          "overview": "Firebase를 활용한 사용자 인증 및 실시간 클라우드 데이터 동기화를 통해, 분산된 정보를 마크다운 형식으로 체계적으로 스크랩하고 관리할 수 있는 서버리스(Serverless) 클립북 웹 애플리케이션.",
+          "stack": [
+            "Vanilla JavaScript",
+            "Firebase Auth",
+            "Cloud Firestore",
+            "marked.js",
+            "Vercel"
+          ],
+          "features": [
+            "Firebase Auth의 Google OAuth 제공자를 연동하여 안전한 사용자 인증 파이프라인을 구축하고, 로그인된 사용자의 고유 식별자(UID)를 기준으로 Cloud Firestore에 카테고리 및 클립 데이터를 구조화하여 분리 저장함으로써 개인화된 데이터의 클라우드 동기화와 보안성 확보",
+            "HTML5 Drag and Drop API를 적극 활용해 DOM 요소의 dragstart, dragover, drop 이벤트를 제어하고, 드래그 위치에 따라 클라이언트의 데이터 배열 인덱스를 계산 및 재조정하여 직관적인 카테고리 및 클립 순서 변경(Reordering) 시스템 구현",
+            "외부 텍스트 파서 라이브러리인 marked.js를 도입하여 클립 본문에 작성된 원시 텍스트를 마크다운 규칙에 맞춰 HTML로 즉각 렌더링(Rendering)해 가독성을 대폭 향상시키고, LocalStorage 및 CSS 토글을 결합해 브라우저 재접속 시에도 유지되는 다크모드 환경 제공"
+          ]
+        }
       },
       {
         "title": "Weather Here",
-        "url": "https://d34ndhnazdekp6.cloudfront.net/",
+        "demo": "https://d34ndhnazdekp6.cloudfront.net/",
+        "repo": "https://github.com/seungminbluebox/weatherHere",
         "img": "img/weatherHereIcon.png",
-        "desc": "현재위치의 대기,습도,불쾌지수 알림"
+        "desc": "현재위치의 대기,습도,불쾌지수 알림",
+        "details": {
+          "overview": "사용자의 실시간 위치 좌표를 분석하여 날씨, 불쾌지수, 초미세먼지, 자외선 등 생활 밀착형 환경 데이터를 통합 제공하며, AWS 클라우드 인프라를 통해 안정적으로 배포된 프론트엔드 대시보드 애플리케이션.",
+          "stack": [
+            "Vanilla JavaScript",
+            "Vite",
+            "OpenWeather API",
+            "공공데이터포털(AirKorea) API",
+            "AWS"
+          ],
+          "features": [
+            "브라우저의 Geolocation API로 추출한 사용자 위도 및 경도를 기반으로 OpenWeather API를 비동기 호출하고, 반환된 온도와 습도 데이터를 자체적인 건습구 온도 공식에 대입하여 사용자 체감형 '불쾌지수'를 실시간으로 연산 및 제공",
+            "지구의 곡률을 고려한 하버사인 공식(Haversine formula)을 JavaScript 삼각함수(Math.sin, Math.cos 등)로 직접 구현하여, 사용자 위치와 전국 대기질 측정소 간의 구면 거리를 계산해 최단 거리의 측정소를 식별한 뒤 AirKorea API로 지역 맞춤형 대기질 데이터를 요청",
+            "수신된 미세먼지(PM10) 및 초미세먼지(PM2.5) 농도 값을 최소-최대 기준치에 따른 백분율(%)로 치환하는 정규화 로직을 작성하고, 이를 DOM 요소의 CSS 절대 좌표(absolute positioning) 및 색상 속성과 동기화하여 직관적인 상태 게이지 UI로 시각화",
+            "Vite 번들러를 도입하여 날씨, 대기질, 위치, 배경 테마 변경(일출/일몰 시간 기반) 등 기능별로 분리된 ES6 모듈을 최적화하고, 결과물을 AWS(Amazon Web Services) 환경에 배포하여 실제 사용자 트래픽을 처리할 수 있는 클라우드 서비스 운영 경험 확보"
+          ]
+        }
       },
       {
         "title": "Auto Bit",
-        "url": "https://github.com/seungminbluebox/autoBit",
+        "repo": "https://github.com/seungminbluebox/autoBit",
         "img": "img/Bitcoin.png",
-        "desc": "코인 api, 클라우드로 24시간 자동매매"
+        "desc": "코인 api, 클라우드로 24시간 자동매매",
+        "details": {
+          "overview": "업비트(Upbit) API와 기술적 지표 분석을 결합하여 시장 상태에 따라 맞춤형 매매 전략을 자동 실행하고 실시간 메신저 알림을 제공하는 파이썬 기반 암호화폐 매매 봇.",
+          "stack": [
+            "Python",
+            "PyUpbit",
+            "Pandas",
+            "NumPy",
+            "Telegram Bot API",
+            "ORACLE CLOUD"
+          ],
+          "features": [
+            "Pandas와 NumPy를 활용해 실시간 OHLCV 데이터를 분석하고 EMA, RSI 등 보조지표를 계산하여 시장 상황(상승, 횡보, 하락장)을 동적으로 판별하는 판단 알고리즘 구현",
+            "PyUpbit 라이브러리를 통해 업비트 API와 연동하여 실시간 자산 조회 및 시장가 매수/매도 주문을 자동화하고, csv 모듈을 활용해 거래 내역을 파일로 기록",
+            "Requests 모듈을 이용한 Telegram Bot API 연동으로 매매 체결 결과 및 시장 모드 변경, 수익률 등의 알림을 사용자에게 실시간 전송하여 모니터링 편의성 향상"
+          ]
+        }
       }
     ]
   },
@@ -56,27 +247,79 @@
     "projects": [
       {
         "title": "Smart+노트📝",
-        "url": "https://seungminbluebox.github.io/smart-note/",
+        "demo": "https://seungminbluebox.github.io/smart-note/",
+        "repo": "https://github.com/seungminbluebox/smart-note",
         "img": "img/smartnote.png",
-        "desc": "효율적인 메모 관리"
+        "desc": "효율적인 메모 관리",
+        "details": {
+          "overview": "브라우저 로컬 스토리지를 활용한 데이터 영구 저장 기능과 사칙연산 계산기를 통합하여 작업 편의성을 높인 웹 기반 스마트 메모장 애플리케이션.",
+          "stack": [
+            "HTML5",
+            "CSS3",
+            "Vanilla JavaScript",
+            "DOM API",
+            "Web Storage API"
+          ],
+          "features": [
+            "Web Storage API(localStorage)를 적극 활용하여 메모의 제목과 내용을 브라우저에 저장하고 불러오는 CRUD(생성, 읽기, 수정, 삭제) 및 상태 관리 로직 구현",
+            "DOM API(createElement, appendChild)를 사용해 저장된 메모 목록을 동적으로 생성하고, CSS Grid를 활용하여 레이아웃을 반응형으로 구성",
+            "Textarea의 onkeydown 이벤트를 가로채어 Tab 키 입력 시 포커스 이동을 방지하고 들여쓰기(\\t)가 입력되도록 처리하여 문서 작성의 사용자 경험(UX) 개선"
+          ]
+        }
       },
       {
         "title": "배경색 변환🌈",
-        "url": "https://seungminbluebox.github.io/backgroundcolorchanger/",
+        "demo": "https://seungminbluebox.github.io/backgroundcolorchanger/",
+        "repo": "https://github.com/seungminbluebox/backgroundcolorchanger",
         "img": "img/backgroundccolorchaner.png",
-        "desc": "간단한 색상 변경"
+        "desc": "무작위 색상 코드제공 및 시각화",
+        "details": {
+          "overview": "무작위 16진수(Hex) 색상을 생성하여 화면에 동적으로 적용하고, 원클릭으로 색상 코드를 복사할 수 있는 브라우저 기반 컬러 유틸리티 애플리케이션.",
+          "stack": [
+            "HTML5",
+            "CSS3",
+            "Vanilla JavaScript",
+            "DOM API",
+            "Clipboard API"
+          ],
+          "features": [
+            "JavaScript의 Math.random()과 16진수 문자열을 조합하는 반복문을 활용하여 무작위 Hex 색상 코드를 생성하는 커스텀 알고리즘 구현",
+            "DOM API를 활용해 생성된 색상을 document body의 배경색과 버튼 UI에 실시간으로 반영하고 밝기를 조절하는 동적 스타일링 처리",
+            "Navigator Clipboard API(navigator.clipboard.writeText)를 연동하여 화면에 표시된 색상 코드를 사용자의 클립보드에 간편하게 복사하는 기능 및 사전 예외 처리(Alert) 구현"
+          ]
+        }
       },
       {
         "title": "숫자 카운터🧮",
-        "url": "https://seungminbluebox.github.io/counter/",
+        "demo": "https://seungminbluebox.github.io/counter/",
+        "repo": "https://github.com/seungminbluebox/counter",
         "img": "img/counter.png",
-        "desc": "숫자 세기 보조"
+        "desc": "숫자 세기 보조",
+        "details": {
+          "overview": "직관적인 UI와 순수 JavaScript를 활용하여, 사용자의 클릭 상호작용에 따라 동적으로 수치를 제어하는 브라우저 기반 카운터 애플리케이션.",
+          "stack": ["HTML5", "CSS3", "Vanilla JavaScript", "DOM API"],
+          "features": [
+            "DOM API(querySelector)를 활용하여 사용자의 클릭 이벤트(onclick)에 맞춰 화면의 텍스트 데이터를 실시간으로 읽고 업데이트하는 동적 렌더링 구현",
+            "JavaScript의 parseInt() 함수를 사용하여 문자열 형태의 DOM 요소 데이터를 숫자형으로 변환해 정확한 산술 연산(증가/감소/초기화) 처리",
+            "CSS의 user-select 속성을 none으로 설정하여, 사용자가 버튼을 연속적으로 클릭할 때 텍스트가 드래그되는 현상을 방지하고 조작성 및 UX 향상"
+          ]
+        }
       },
       {
         "title": "가위바위보✊✌️✋",
-        "url": "https://seungminbluebox.github.io/rock_scissors_paper/",
+        "demo": "https://seungminbluebox.github.io/rock_scissors_paper/",
+        "repo": "https://github.com/seungminbluebox/rock_scissors_paper",
         "img": "img/rock scissors paper.png",
-        "desc": "미니 게임"
+        "desc": "미니 게임",
+        "details": {
+          "overview": "직관적인 UI와 순수 JavaScript 기반의 로직을 활용하여 구현된 브라우저 환경의 대화형 가위바위보 게임 프로젝트.",
+          "stack": ["HTML5", "CSS3", "Vanilla JavaScript", "DOM API"],
+          "features": [
+            "Vanilla JavaScript의 Math.random() 메서드를 활용한 난수 생성으로 컴퓨터의 무작위 선택 알고리즘 구현",
+            "DOM API(querySelector) 및 템플릿 리터럴을 활용하여 사용자와 컴퓨터의 선택 결과 및 승패 상태를 화면에 실시간으로 동적 렌더링",
+            "전역 변수를 활용한 인메모리 상태 관리 기법을 통해 승, 패, 무승부 누적 전적 카운팅 및 초기화(Reset) 기능 제공"
+          ]
+        }
       }
     ]
   }

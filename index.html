@@ -9,16 +9,19 @@
     <script type="module" src="./js.js"></script>
   </head>
 
-  <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen py-12 px-4 flex justify-center items-center">
+  <body
+    class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen py-12 px-4 flex justify-center items-center"
+  >
     <!-- Main Container: Mobile focus on profile, Desktop side-by-side -->
     <div class="max-w-6xl w-full flex flex-col lg:flex-row gap-8 items-start">
-      
       <!-- Profile Area (Sticky on Desktop) -->
       <div class="w-full lg:w-96 lg:sticky lg:top-12 flex-shrink-0">
         <div class="glass-morphism rounded-3xl p-8 flex flex-col items-center">
           <!-- Profile Section -->
           <div class="relative mb-6">
-            <div class="absolute inset-0 bg-blue-400 rounded-full blur-xl opacity-20"></div>
+            <div
+              class="absolute inset-0 bg-blue-400 rounded-full blur-xl opacity-20"
+            ></div>
             <a href="index.html" class="block relative group">
               <img
                 id="profile"
@@ -29,8 +32,12 @@
             </a>
           </div>
 
-          <h1 class="text-2xl font-bold mb-2 text-slate-800 text-center">승민's Profile</h1>
-          <p class="text-blue-600 font-medium mb-8 italic text-center">"R=VD"</p>
+          <h1 class="text-2xl font-bold mb-2 text-slate-800 text-center">
+            승민's Profile
+          </h1>
+          <p class="text-blue-600 font-medium mb-8 italic text-center">
+            "R=VD"
+          </p>
 
           <!-- SNS Links -->
           <div class="w-full space-y-3 text-left">
@@ -42,7 +49,9 @@
                 <img class="w-6 h-6" src="img/instagram.webp" alt="Insta" />
                 <span class="font-semibold text-slate-700">Instagram</span>
               </div>
-              <span class="text-xs text-slate-400 group-hover:text-blue-500">@box._.min →</span>
+              <span class="text-xs text-slate-400 group-hover:text-blue-500"
+                >@box._.min →</span
+              >
             </a>
 
             <a
@@ -53,7 +62,9 @@
                 <img class="w-6 h-6" src="img/tstory.png" alt="Tistory" />
                 <span class="font-semibold text-slate-700">T-story</span>
               </div>
-              <span class="text-xs text-slate-400 group-hover:text-blue-500">NotePad📝 →</span>
+              <span class="text-xs text-slate-400 group-hover:text-blue-500"
+                >NotePad📝 →</span
+              >
             </a>
 
             <a
@@ -61,23 +72,43 @@
               class="btn-hover flex items-center justify-between w-full p-4 bg-slate-800 text-white rounded-2xl shadow-md group"
             >
               <div class="flex items-center gap-3">
-                <img class="w-6 h-6 invert" src="img/github.webp" alt="Github" />
+                <img
+                  class="w-6 h-6 invert"
+                  src="img/github.webp"
+                  alt="Github"
+                />
                 <span class="font-semibold">GitHub</span>
               </div>
-              <span class="text-xs text-slate-400 group-hover:text-white">BlueBox →</span>
+              <span class="text-xs text-slate-400 group-hover:text-white"
+                >BlueBox →</span
+              >
             </a>
           </div>
 
           <!-- Tooltip Original Favicon -->
-          <div class="mt-8 pt-6 border-t border-slate-100 w-full flex justify-center">
+          <div
+            class="mt-8 pt-6 border-t border-slate-100 w-full flex justify-center"
+          >
             <div class="group relative cursor-help">
-              <img class="opacity-30 hover:opacity-100 transition-opacity w-6 h-6" src="img/information.png" />
+              <img
+                class="opacity-30 hover:opacity-100 transition-opacity w-6 h-6"
+                src="img/information.png"
+              />
               <div
                 class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 hidden group-hover:block w-48 p-4 bg-white rounded-2xl shadow-2xl border border-slate-100 z-50 transition-all scale-95 group-hover:scale-100"
               >
-                <div class="text-[10px] text-slate-400 mb-2 text-center text-nowrap">탭 상단 favicon 원본 이미지</div>
-                <img class="w-full aspect-square rounded-lg mb-2 shadow-inner" src="img/favicon.png" />
-                <div class="text-xs font-bold text-center text-slate-600">우리집 강아지 써니 🐶</div>
+                <div
+                  class="text-[10px] text-slate-400 mb-2 text-center text-nowrap"
+                >
+                  탭 상단 favicon 원본 이미지
+                </div>
+                <img
+                  class="w-full aspect-square rounded-lg mb-2 shadow-inner"
+                  src="img/favicon.png"
+                />
+                <div class="text-xs font-bold text-center text-slate-600">
+                  우리집 강아지 써니 🐶
+                </div>
               </div>
             </div>
           </div>
@@ -87,7 +118,9 @@
       <!-- Projects Area (Flexible Right side) -->
       <div class="flex-1 w-full flex flex-col gap-6">
         <div class="glass-morphism rounded-3xl p-8 min-h-[500px]">
-          <h2 class="text-xl font-bold mb-8 flex items-center gap-3 text-slate-800">
+          <h2
+            class="text-xl font-bold mb-8 flex items-center gap-3 text-slate-800"
+          >
             <span class="w-2 h-8 bg-blue-500 rounded-full"></span>
             PROJECTS TIMELINE
           </h2>
@@ -104,6 +137,70 @@
         </div>
       </div>
     </div>
-  </body>
+
+    <!-- Full-page Project Detail Viewer (Best for long content) -->
+    <div
+      id="project-modal"
+      class="fixed inset-0 z-[200] hidden flex-col bg-white overflow-hidden transition-all duration-500 ease-in-out opacity-0 translate-y-4"
+    >
+      <!-- Sticky Top Navigation -->
+      <nav
+        class="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-white/80 backdrop-blur-md sticky top-0 z-30"
+      >
+        <button
+          id="close-modal"
+          class="flex items-center gap-2 group text-slate-400 hover:text-slate-900 transition-colors"
+        >
+          <svg
+            class="w-5 h-5 group-hover:-translate-x-1 transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          </svg>
+          <span class="text-xs font-bold uppercase tracking-widest"
+            >Back to Portfolio</span
+          >
+        </button>
+        <div
+          id="modal-nav-title"
+          class="hidden md:block text-[10px] font-black tracking-[0.3em] text-slate-300 uppercase truncate max-w-xs"
+        >
+          Showcase
+        </div>
+        <div class="w-20"></div>
+      </nav>
+
+      <!-- Scrollable Content Area -->
+      <div
+        id="modal-scroll-container"
+        class="flex-1 overflow-y-auto custom-scrollbar flex flex-col items-center"
+      >
+        <div
+          id="modal-content"
+          class="w-full max-w-4xl px-6 py-12 md:py-24 flex flex-col gap-24"
+        >
+          <!-- Content injected via JS -->
+        </div>
+
+        <!-- Footer decoration -->
+        <footer
+          class="w-full max-w-4xl px-6 py-20 border-t border-slate-50 flex flex-col items-center gap-4 opacity-30"
+        >
+          <img src="img/favicon.png" class="w-8 h-8 grayscale" />
+          <p
+            class="text-[10px] font-black uppercase tracking-widest text-slate-400 text-center"
+          >
+            End of Project Case Study
+          </p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
